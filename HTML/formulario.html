@@ -1,0 +1,51 @@
+<!--Indica que este tipo de archivo es HTML-->
+<!DOCTYPE html>
+<!--Engloba todo el codigo HTML-->
+<html lang="es">
+  <!--
+    La cabezera de la pagina, contiene información que no forma parte del contenido de la página
+    Pero que contiene información utiles para los buscadores como Google
+  -->
+  <head>
+    <!--Conjunto de caracteres manejados en la página web-->
+    <meta charset="UTF-8">
+    <!--Indica que es una página web responsive (Realmente no tiene que ser realmente responsive)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Indica el titulo de la pagina, visualizable en google y en la pestaña-->
+    <title>Document</title>
+  </head>
+  <!--El cuerpo de la pagina, contiene todo el contenido visualizable de la pagina-->
+  <body>
+    <form action="">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+      <br>
+      <label for="fecha_de_nacimiento">Fecha de nacimiento</label>
+      <input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento">
+      <br>
+        <select name="genero" id="genero">
+          <option value="masculino">masculino</option>
+          <option value="femenino">femenino</option>
+          <option value="otro">otro</option>
+        </select>
+      <br>
+      <label for="numero_telefonico">Numero de telefono</label>
+      <input type="tel" id="numero_telefonico" name="numero_telefonico">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="password">Contrasena</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <label for="incapacidad">¿Tiene alguna discapacidad?</label>
+      <input type="radio" name="incapacidad" id="incapacidad_si" value="verdadero">
+      <label for="incapacidad_si">Sí</label>
+      <input type="radio" name="incapacidad" id="incapacidad_no" value="falso">
+      <label for="incapacidad_no">No</label>
+      <br>
+      <label for="sumit">Enviar</label>
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
