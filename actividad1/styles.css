@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav{
+  display: flex;
+  justify-content:space-between;
+  padding: 20px;
+}
+
+.navpc{
+  display: flex;
+  gap: 10px;
+}
+
+  @media only screen and (min-width: 600px) {
+    .navpc{
+      display:none;
+    }
+    .navmovil{
+      display: flex;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .navpc{
+      display: flex;
+    }
+    .navmovil{
+      display: none;
+    }
+  }
