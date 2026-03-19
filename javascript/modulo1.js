@@ -162,3 +162,67 @@ a
 3 < 2 //false
 2 >= 2 //true
 0 <= 3 //true
+
+//Leyenda
+var trece = !(
+  (!(!(10 / 5 == "2") === false) != false) === 5 * 5 <= 100 / 4 &&
+  !(1 + 1 !== 10 / 5) !== true
+); 
+
+//Inmortal
+var catorce = !!(
+  (10 % 3 != 1 || typeof ("10" - 5) !== "number" || !!([] && {})) &&
+  (12 * 4 === "48" || (7 <= "7" && "7" <= 7) || Boolean(0) === Boolean("0"))
+); 
+
+
+
+/*
+  Condicionales
+  if (condicion) {
+    //codigo a ejecutar si la condicion es verdadera
+  } else {
+    //codigo a ejecutar si la condicion es falsa
+  }
+*/
+
+let edad = 18;
+
+if (typeof edad !== "number") {
+  console.log("La edad debe ser un numero");
+} else if (edad < 0) {
+  console.log("La edad no puede ser negativa");
+} else if (edad < 18) {
+  console.log("Eres menor de edad");
+} else if (edad >= 18 && edad < 65) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres adulto mayor");
+}
+
+let tiempo = true;
+let dinero = true;
+let ganas = false;
+let campeones_del_mundo = true;
+
+if ((tiempo && dinero && ganas) || campeones_del_mundo) {
+  console.log("Hoy salgo");
+} else {
+  console.log("Hoy no salgo");
+}
+
+let color = "verde";
+
+switch (color) {
+  case "verde":
+    console.log("Avanza");
+    break;
+  case "amarillo":
+    console.log("Precaucion");
+    break;
+  case "rojo":
+    console.log("Alto");
+    break;
+  default:
+    console.log("Color no valido");
+}
