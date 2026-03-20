@@ -226,3 +226,27 @@ switch (color) {
   default:
     console.log("Color no valido");
 }
+
+
+
+let number1 = 10;
+let number2 = 2;
+let operador = 'papa';
+
+switch (operador) {
+  case 'suma':
+    console.log(number1 + number2);
+    break;
+  case 'resta':
+    console.log(number1 - number2)
+    break;
+  case 'dividir':
+    console.log(number1 / number2)
+    break;
+  case 'multiplicar':
+    console.log(number1 * number2)
+    break;
+  default:
+    console.log("ingrese una operacion valida");
+    break;
+}
