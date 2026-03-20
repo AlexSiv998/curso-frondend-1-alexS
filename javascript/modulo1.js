@@ -250,3 +250,4 @@ switch (operador) {
     console.log("ingrese una operacion valida");
     break;
 }
+
