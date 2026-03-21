@@ -229,9 +229,11 @@ switch (color) {
 
 
 
-let number1 = 10;
-let number2 = 2;
-let operador = 'papa';
+let num1 = Number(prompt("Ingrese el primer numero"));
+let num2 = Number(prompt("Ingrese el segundo numero"));
+let operacion = prompt(
+  "Ingrese la operacion a realizar (suma, resta, multiplicacion, division)",
+);
 
 switch (operador) {
   case 'suma':
@@ -250,4 +252,5 @@ switch (operador) {
     console.log("ingrese una operacion valida");
     break;
 }
+
 
