@@ -45,8 +45,8 @@ function multiplicar(num1, num2) {
 console.log(sumar(2, 3));
 console.log(multiplicar(2, 3));
 
-function calculadora() {
-  switch (calculadora) {
+function calculadora(number1, number2, operacion) {
+  switch (operacion.toLowerCase()) {
     case 'suma':
       alert(number1 + number2);
       break;
@@ -67,6 +67,8 @@ function calculadora() {
 
 let num1 = Number(prompt("Ingrese el primer numero"));
 let num2 = Number(prompt("Ingrese el segundo numero"));
-let operacion = prompt(
-  "Ingrese la operacion a realizar (suma, resta, multiplicacion, division)",
+let op = prompt(
+  "Ingrese la operacion a realizar (suma, resta, multiplicar, dividir)",
 );
+
+calculadora(num1, num2, op);
