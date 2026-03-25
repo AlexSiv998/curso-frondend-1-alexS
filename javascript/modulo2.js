@@ -217,3 +217,63 @@ console.log(increible);
 */
 
 
+function contar(contador = 0){
+  if(contador <= 10){
+    console.log(`Esta funcion cuenta hasta el 10, voy por el numero ${contador}`);
+    contar(contador + 1);  
+  } 
+}
+
+contar()
+
+
+
+let frutas = ["tomate", "banana", "fresa", "kiwi"];
+
+function recorrerArray(array, contador = 0) {
+  if (contador <= array.length) {
+    console.log(array[contador]);
+    recorrerArray(array, contador + 1);
+  }
+}
+
+
+/*
+  Crea un programa que imprima solo los numeros pares del siguiente array
+  [0,3,5,1,2,8,9,10]
+*/
+
+function detectarPar(array, contador = 0){
+  if(contador < array.length){
+    if(array[contador] % 2 == 0){
+      console.log(`${array[contador]} es un numero par`);
+    }
+    detectarPar(array, contador + 1);
+  }
+}
+
+detectarPar([0,3,5,1,2,8,9,10])
+
+/*
+  EJERCICIOS DE RECURSION 
+
+  1) Cuenta desde el ultimo numero de un array hasta el primero
+  [5,2,92,0,3,73,9,6,12]
+
+  2) Suma todos los numeros de un array e imprime cuanto es el total
+  [5,2,92,0,3,73,9,6,12]
+
+  3)Realiza la sucesion de fibonacci hasta un numero N
+*/
+
+
+function cuentaRegresiva(array, contador = 8){
+  if(contador >= array.length - 1){
+    if (array[contador] ){
+      console.log(`Esta funcion va en cuenta regresiva y va por el numero ${contador}`);
+      cuentaRegresiva(array,contador < 0 ); 
+    }
+  }
+}
+
+cuentaRegresiva([5,2,92,0,3,73,9,6,12]);
