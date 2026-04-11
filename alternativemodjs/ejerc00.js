@@ -233,3 +233,115 @@ Pista: Para las horas usa Math.floor() (para obtener el entero de la división e
 Resultado esperado: "2 horas y 25 minutos".
 */
 
+// Ejercicios strings 
+
+//1 y 6
+/*let nameUser = 'Alex'
+let mail = 'Alexpro@gmail.com'
+
+console.log('Hola, ',`${nameUser}.`,'Tu correo es:', `${mail}.`)
+
+//2
+console.log(nameUser.length)
+
+//3
+console.log(nameUser[0])
+console.log(nameUser[3])
+
+//4
+console.log(mail.toUpperCase())
+console.log(mail.toLowerCase())
+
+//5
+let texEj = 
+  `rapido corre, 
+  el camino
+  a recorrer
+  `
+
+//7
+
+let texEj2 = "rapido corre el camino, a recorrer en la avenida"
+
+console.log(texEj2.replaceAll(' ', '-'))
+
+//8
+
+console.log(texEj2.includes('corre'))
+
+*/
+
+// condicionales if/else/ ifelse
+
+//1
+
+let myname = 'juan'
+
+if (myname === 'Alex') {
+  console.log('Tu nombre es Alex')
+} else {
+  console.log('Tu nombre no es Alex')
+}
+
+//2
+
+let myUser = 'pedro'
+let myPassword = 'pecao1'
+
+if (myUser === 'AlexSiv'&& myPassword === 'alexSiv1') {
+  console.log('Usuario y contraseña correctos, puede ingresar')
+} else if (myUser !== 'AlexSiv') {
+  console.log('Usuario incorrecto')
+} else if (myPassword !== 'alexSiv1') {
+  console.log('contraseña incorrecta')
+} 
+
+//3
+
+
+let number = 13
+
+if (number > 0) {
+  console.log('numero positivo')
+} else {
+  console.log('numero negativo')
+}
+
+//4
+
+let juancho = 21
+
+if (juancho > 18) {
+  console.log('es mayor de edad, puede votar')
+} else {
+  console.log(`te faltan`, 18-juancho, `años para poder votal` )
+}
+
+//5
+let mariaM = 12
+
+let edad = mariaM >= 18 ? console.log('Eres mayor') : console.log('Eres menor')
+
+//switch 1
+
+let idioma = 'aleman'
+let saludo = ''
+
+switch (idioma) {
+  case 'espanish':
+    saludo = 'Hola!'
+    break;
+  case 'english':
+    saludo = 'Hello!'
+    break;
+  case 'frech':
+    saludo = 'Bonjour!'
+    break;
+  default: 
+    saludo = 'debe seleccionar un idioma valido'
+    break;
+}
+
+console.log(saludo)
+
+
